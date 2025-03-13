@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <title>BGMI eSports</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Russo+One&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Exo+2:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Russo+One&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Exo+2:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Russo+One&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Russo+One&display=swap" rel="stylesheet">
+<link href="https://api.fontshare.com/v2/css?f[]=supreme@400&f[]=bespoke-stencil@700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    
+    <div class="top-para">
+        <p class="top-text">BGMI eSports is the ultimate battelfield where skill, strategy, and determination create champions.</p>
+    </div>
+    <style>
+        body{
+            background-color:#1e1e1e;
+        }
+        h1,h2,h3,h4,h5{
+            font-family: 'Bespoke Stencil', sans-serif;
+        }
+        p{
+            font-family: "Roboto", serif;
+        }
+        h1{
+            font-size:48px;
+        }
+        .top-text{
+            color:black;text-align:center;padding:12px;background:#ffb800;font-weight:bold;font-size:20px;
+        }
+        nav a{
+            text-decoration:none;
+            color:#888888;
+            margin-inline:24px;
+            font-weight:500;
+        }  
+        .button-1{
+            border:none;
+            border-radius:6px;
+            color: #d4d4d4;
+            background:transparent;
+            padding:4px 12px;
+            font-weight:500;
+            margin-right:4px;
+            font-weight:500;
+        }
+        .button-2{
+            border:1px solid white;
+            border-radius:4px;
+            color:white;
+            padding:4px 12px;
+            font-weight:500;
+            background:transparent;
+            font-weight:500;
+        }
+        .background-head{
+            height:90vh;
+            position: relative;
+        }
+        .head-text{
+            position:absolute;
+            top:50%;
+            left:50%;
+            transform:translate(-50%,-50%);
+        }
+        .background-head{
+           position: relative;
+           width:100%;
+           height:100vh;
+           display:flex;
+           align-items:center;
+           justify-content:center;
+           overflow:hidden;
+        }
+        .video-back video{
+            position:absolute;
+            top:0;
+            left:0;
+            right:0;
+            width:100%;
+            height:auto;
+            background-size:cover;
+        }
+        .overlay{
+            position: absolute;
+            background:rgba(0,0,0,0.5);
+            top:0;
+            right:0;
+            left:0;
+            bottom:0;
+        }
+        a:hover i{
+            scale:1.1;
+            padding-left:12px;
+        }
+        i{
+            transition:0.3s;
+        }
+        .raise-flex{
+            display:flex;
+            justify-content:space-between;
+            gap:px;
+        }
+        .jonny-card{
+            display:flex;
+            justify-content:space-between;
+            align-items:center;
+            padding:16px;
+            border:1px solid #eaeaea;border-radius:10px;
+            background:black;
+            box-shadow:0px 6px 15px rgba(0, 0, 0, 0.7);
+        }
+        .review-container{
+            border:1px solid white;
+            padding:16px;
+            border-radius:10px;
+            background:black;box-shadow:0px 6px 15px rgba(0, 0, 0, 0.7);
+        }
+        .review-container-out{
+            display:flex;
+            justify-content:space-between;
+            gap:px;
+        }
+        .about-jony-container{
+            display:flex;
+            justify-content:space-between;
+            align-items:center;
+            gap:32px;
+            margin-block:24px;
+        }
+        a{
+            text-decoration:none;
+            margin-right:40px;
+        }
+        .head-container{
+            display: flex;
+            justify-content:space-between;
+           margin-top:40px; 
+           margin-bottom:0px;
+           
+        }
+        .heading-2{
+            color: #eaeaea;text-align:center;margin-top:40px;font-weight:bold;margin-bottom:20px;
+        }
+        .Heading-2-top{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+
+    <div class="container">
+        <nav
+        class="navbar navbar-expand-lg"
+    >
+        <div class="container">
+            <a class="navbar-brand ms-0" href="#"><img class="top-logos" src="https://esports.battlegroundsmobileindia.com/images/krafton-logo.svg" alt="">
+                <img class="top-logos" style="margin-left:16px;" src="https://esports.battlegroundsmobileindia.com/images/BGMI%20logo%202%201.svg" alt=""></a>
+            
+            <button
+                style="border:1px solid white;"
+                class="navbar-toggler d-lg-none"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapsibleNavId"
+            >
+                <span ><i style="color:white;" class="fa-solid fa-bars"></i></span>
+            </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavId">
+                <ul class="navbar-nav me-auto mt-2 mt-lg-0 ">
+                    <li class="nav-item">
+                        <a style="color: #d4d4d4;font-weight:bold;" class="nav-link active" href="#" aria-current="page"
+                            >TOURNAMENTS
+                            <span class="visually-hidden">(current)</span></a
+                        >
+                    </li>
+                    <li class="nav-item">
+                        <a style="color: #d4d4d4;font-weight:bold;" class="nav-link" href="#">RANKINGS</a>
+                    </li>
+                    <li>
+                    <a style="color: #d4d4d4;font-weight:bold;" class="nav-link active" href="#" aria-current="page"
+                            >VIDEOS
+                            <span class="visually-hidden">(current)</span></a
+                        >
+                    </li>
+                        <div
+                            class="dropdown-menu"
+                            aria-labelledby="dropdownId"
+                        >
+                            <a class="dropdown-item" href="#"
+                                >Action 1</a
+                            >
+                            <a class="dropdown-item" href="#"
+                                >Action 2</a
+                            >
+                        </div>
+                    </li>
+                </ul>
+                <button class="button-1">
+                    Login
+                </button>
+                    <button
+                        class="button-2"
+                    >
+                        Sign up
+                    </button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+
+    <div class="background-head mt-3" >
+    <video autoplay muted loop class="video-back">
+        <source src="https://cdn.pixabay.com/video/2023/05/28/164807-831084936_large.mp4">
+    </video>
+    <div class="overlay"></div>
+    <div class="head-text" style="text-align:center;margin-top:30px;">
+        <img width="170px" src="https://liquipedia.net/commons/images/3/3b/Battlegrounds_Mobile_India_Series_2024_allmode.png" alt="">
+        <h1 style="color:#eaeaea;font-weight:bold;">Raise of Champions</h1>
+        <p style="color: #d4d4d4;;font-size:18px;">Rise of Champions. It's more than a game. It's legancy. Explore the stories behind the legends of BGMI esports, here.</p>
+    </div>
+    </div>
+
+<div class="head-container">
+<div class="bgmi-img">
+    <img style="max-width:300px;width:100%;" src="bgmi.png" alt="">
+</div>
+<div class="texts">
+    <h2 class="review-head" style="color:#eaeaea;font-size:40px;font-weight:bold;">100M+</h2>
+    <p class="review-pa" style="color:#d4d4d4;font-size:20px;font-weight:bold;">Downloads</p>
+</div>
+<div class="texts">
+    <h2 class="review-head" style="color:#eaeaea;font-size:40px;font-weight:bold;">4.3 <i style="color:#eaeaea;font-size:32px;" class="fa-solid fa-star"></i></h2>
+    <p class="review-pa" style="color:#d4d4d4;font-size:18px;font-weight:bold;">65L reviews</p>
+</div>
+<div class="texts">
+    <h2 class="review-head" style="color:#eaeaea;font-size:40px;font-weight:bold;">16+</h2>
+    <p class="review-pa" style="color:#d4d4d4;font-size:18px;font-weight:bold;">Rated for 16+</p>
+</div>
+</div>
+    <div class="Heading-2-top">
+        <img class="om-img" style="max-width:250px;width:100%;transform:rotateY(180deg);" class="img-fluid" src="om-2-img.png" alt="">
+    <div class="heading-2">
+    <h2 class="heading-2">The Evolution of BGMI eSports</h2>
+    </div>
+    <img class="om-img" style="max-width:250px;width:100%;" src="om-2-img.png" alt="">
+    </div>
+    </div>
+</div>
+    
+    <div class="container">
+    <div class="row gx-0 g-3">
+    <div class="col-12 col-md-4 d-flex">
+            <div class="card p-3 h-100 w-100"  style=" background:black;border:1px solid white;box-shadow:0px 6px 15px rgba(0, 0, 0, 0.7);">
+                <img class="card-img-top" src="https://esportsinsider.com/wp-content/uploads/2023/09/PMCO-Star-Challenge-2019-image-min.png" alt="">
+                <div class="card-body">
+                    <h5 class="card-title" style="color:#eaeaea;font-weight:bold;">PUBG Mobile eSports (Before Ban)</h5>
+                    <p class="card-text" style="color:#888888;">PUBG Mobile kickstarted the eSports revolution in India, with Tournaments 
+                                         like <span style="color:white;"> PMIS, PMCO, and PMWL</span> providing a platform for raising talent to <span style="color:white;">....</span>
+                    </p>
+                    <a style="color:#ecc371;text-decoration:none;" href="#" class="">Read more <i style="margin-left:4px;" class="fa-solid fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+
+    <div class="col-12 col-md-4 d-flex">
+            <div class="card p-3 h-100 w-100"  style="background:black;border:1px solid white;box-shadow:0px 6px 15px rgba(0, 0, 0, 0.7);">
+                <img class="card-img-top" src="background-bgmi-1.jpg" alt="">
+                <div class="card-body">
+                    <h5 class="card-title" style="color:#eaeaea;font-weight:bold;">BGMI Launch & Early eSports Scene</h5>
+                    <p class="card-text" style="color:#888888;">A year after PUBG Mobile ban, BGMI (Battelgrounds Mobile India) was introduced,
+                                                                  reignitind hope for Indian gamers. With its launch, the  <span style="color:white;">....</span>
+                                                                  
+                    </p>
+                    <a style="color:#ecc371;text-decoration:none;" href="#" class="">Read more <i style="margin-left:4px;" class="fa-solid fa-arrow-right"></i></a>
+                </div>
+            </div>
+            </div>
+         
+    <div class="col-12 col-md-4 d-flex">
+            <div class="card p-3 h-100 w-100"  style="background:black;border:1px solid white;box-shadow:0px 6px 15px rgba(0, 0, 0, 0.7);">
+                <img class="card-img-top" src="https://esportsinsider.com/wp-content/uploads/2023/06/skyesports-scs-bgmi-2023-large.jpg" alt="">
+                <div class="card-body">
+                    <h5 class="card-title" style="color:#eaeaea;font-weight:bold;">Major Tournaments and Milestones</h5>
+                    <p class="card-text" style="color:#888888;">Over the years, BGMI eSports has seen tremendous growth, with numerous major tournaments that have
+                                                                  not only showcased the incredible skills of<span style="color:white;">....</span> 
+                                                                  
+                    </p>
+                    <div class="hover-effect">
+                    <a style="color:#ecc371;text-decoration:none;" href="#" class="">Read more <i style="margin-left:4px;" class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+ <div>
+    <h2 style="color:#eaeaea;text-align:center;font-weight:bold;margin-top:48px;margin-bottom:32px;">Jonathan-The Undisputed Clutch Master</h2>
+ </div>
+ <div class="container">
+    <div class="jonny-card">
+ <div>
+      <h2 style="color:#ecc371;font-size:24px;margin-bottom:0;">चल मार! चल नहीं होरा क्या?</h2>
+      <h2 style="color:#eaeaea;font-weight:bold;margin-bottom:0;margin-top:24px;">Godljonathan- The Clutch Master <br> of BGMI</h2>
+      <p style="color: #d4d4d4;margin-top:24px;margin-bottom:24px;">Jonathan clutches from 2019-2024</p>
+      <button style="border:1px solid #ecc371;background:transparent;color:#ecc371;padding:4px 12px;border-radius:4px;">Go watch now</button>
+ </div>
+ <div>
+ <img style="border-radius:10px;" class="img-fluid" width="500px" height="270px" src="https://img.redbull.com/images/q_auto,f_auto/redbullcom/2021/11/29/vc7ejihdky2kiyyanf4f/jonathan-bgmi-gamer" alt="">
+</div>
+</div>
+</div>
+
+<div class="container"> 
+<div class="jon-text-2 d-flex justify-content-center align-items-center mt-4 gap-4">
+<img style="margin-block:px;border-radius:10px;"class="img-fluid" width="500px" height="270px" src="https://media.assettype.com/afkgaming%2F2022-12%2F1f42e7d4-fe78-4ab4-9692-e83b33151a24%2FCover_Image___JONATHAN_Comes_Second_For_Esports_Mobile_Player_Of_The_Year_At_Esports_Awards_2022.jpg?auto=format%2Ccompress&dpr=1.0&w=1200" alt="">
+<div>
+<div class="jony-img">
+<h4 style="color:#eaeaea;font-weight:bold;margin-bottom:24px;">From Rookie to Pro-The Rise of Jonathan</h4>
+<p class="sub-paragraph" style="color:#d4d4d4;margin-top:0;">Jonathan Amaral, popularly known as Jonathan Gaming, is a renowned Indian BGMI eSports player famous for his "zero recoil"
+     mastery. Starting with PUBG Mobile, he rose to fame with Entity Gaming, showcasing exceptional skills in tournaments 
+     like PMCO Fall Split 2019. His aggressive gameplay and clutch performances earned him MVP titles, and he continued his
+      dominance with TSM-Entity. After PUBG's ban, he transitioned to BGMI, joining GodLike Esports.</p>
+</div>
+</div>
+</div>
+<div>
+<div class="jon-text d-flex justify-content-center align-items-center mt-4 gap-4">
+    <div>
+    <div class="jony-img">
+    <h4 style="color:#eaeaea;font-weight:bold;margin-bottom:24px;">Breaking Records, Winning Hearts</h4>
+    <p class="sub-paragraph" style="color:#d4d4d4;margin-top:0;">Jonathan Gaming has an impressive list of achievements in the eSports world. He was the MVP of PMIS 2020 and consistently
+         top-fragged in tournaments like PMCO Fall Split 2019, where his team secured top positions. Known for his "zero recoil" sprays,
+          he holds records for the highest kill counts in multiple BGMI events. With TSM-Entity, he dominated the Indian scene, and after
+           joining GodLike Esports, he continued to shine in BGIS 2021, securing top placements. Jonathan is also the first Indian player
+            to cross 100 MVP titles in official tournaments, solidifying his legacy in mobile gaming.</p>
+        </div>
+    </div>
+        <img class="img-fluid" style="border-radius:10px;" width="500px" height="270px" src="https://prod.assets.earlygamecdn.com/images/BGMI-Jonathan-Sensitivity-Settings.png?transform=banner_webp" alt="">
+</div>
+</div>
+<div class="jon-text-2 d-flex justify-content-between align-items-center mt-4 gap-4">
+    <img class="img-fluid" style="border-radius:10px;" width="500px" height="270px" src="https://i.ytimg.com/vi/2YIGiMdFo9s/maxresdefault.jpg" alt="">
+<div>
+    <div class="jony-img">
+    <h4 style="color:#eaeaea;font-weight:bold;margin-bottom:24px;">More Than a Player-A Legacy in the Making</h4>
+    <p class="sub-paragraph" style="color:#d4d4d4;margin-top:0;">Jonathan Gaming is more than just a player; he’s a legacy in the making. His journey from casual gaming to becoming one of India’s top BGMI eSports
+         athletes showcases his unmatched skill, dedication, and passion. Known for his iconic "zero recoil" sprays and clutch performances, Jonathan has
+          redefined mobile gaming standards in India.
+           His impact extends beyond the battlefield, shaping the future of Indian eSports. As he continues to break records and set new benchmarks, Jonathan’s 
+           legacy as a gaming legend is just beginning.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="container">
+<div style="text-align:center;margin-top:48px;">
+    <img width="100px" src="godlike-logo.png" alt="">
+    <h2 style="color: #eaeaea;text-align:center;font-size:28px;margin-block:32px;font-weight:bold;">GodLike Esports: Dominating the Indian eSports Scene</h2>
+    <p style="color:#d4d4d4;">GodLike Esports has become a household name in the Indian eSports scene, known for its exceptional gameplay and dominance in titles like BGMI. Founded
+         with the vision of creating a powerhouse, the team quickly rose to fame with top-tier players like Jonathan, ClutchGod, and Neyoo. Over the years,
+          GodLike has consistently outperformed in national tournaments, earning a reputation for strategic gameplay, teamwork, and raw talent. Their success
+           not only secured championships but also played a crucial role in elevating Indian eSports on the global map. Today, GodLike stands as a symbol of 
+           excellence, inspiring future generations of gamers across India.</p>
+</div>
+</div>
+
+<div class="container">
+    <div class="row gx-0 g-3">
+        <div class="col-6 col-lg-3  d-flex">
+            <div class="card h-100 w-100" style="width:30%;background:black; border-radius:10px;border:1px solid white;box-shadow:0px 6px 15px rgba(0, 0, 0, 0.7);">
+                <img height="300px" class="card-img-top" src="https://liquipedia.net/commons/images/5/54/Godlike_Punkk_2024.jpg" alt="">
+                <h5 style="color:white; text-align:center;font-size:16px;" class="card-title mt-2 fw-semi-bold">Godlpunk <span style="font-weight:100;">(Igl)</span></h5>
+            </div>
+        </div>
+        <div class="col-6 col-lg-3  d-flex">
+            <div class="card h-100 w-100" style="width:30%;background:black;border-radius:10px;border:1px solid white;box-shadow:0px 6px 15px rgba(0, 0, 0, 0.7);">
+                <img height="300px" class="card-img-top" src="https://liquipedia.net/commons/images/9/9f/Godlike_ADMINO_2024.jpg" alt="">
+                <h5 style="color:white; text-align:center;font-size:16px;" class="card-title mt-2  fw-semi-bold">Godladmino <span style="font-weight:100;">(Assaulter)</span></h5>
+            </div>
+        </div>
+        <div class="col-6 col-lg-3  d-flex">
+            <div class="card h-100 w-100" style="width:30%;background:black;border-radius:10px;border:1px solid white;box-shadow:0px 6px 15px rgba(0, 0, 0, 0.7);">
+                <img height="300px" class="card-img-top" src="https://liquipedia.net/commons/images/e/e4/Godlike_ZGOD_2024.jpg" alt="">
+                <h5 style="color:white; text-align:center;font-size:16px;" class="card-title mt-2  fw-semi-bold">GodlzGod <span style="font-weight:100;">(Supporter)</span></h5>
+        </div>
+        </div>
+        <div class="col-6 col-lg-3  d-flex">
+            <div class="card h-100 w-100" style="width:30%;background:black;border-radius:10px;border:1px solid white;box-shadow:0px 6px 15px rgba(0, 0, 0, 0.7);">
+                <img height="300px" class="card-img-top" src="https://liquipedia.net/commons/images/4/44/Godlike_Jonathan_2024.JPG" alt="">
+                <h5 style="color:white; text-align:center;font-size:16px;" class="card-title mt-2  fw-semi-bold">Godljonathan  <span style="font-weight:100;">(Assaulter)</span></h5>
+        </div>
+        </div>
+        </div>
+        </div>
+        
+
+<div class="container">
+    <h2 style="color: #eaeaea; text-align:center;margin-top:48px;font-weight:bold;margin-bottom:32px;">Iconic Matches & Legendary Moments</h2>
+</div>
+
+<div class="container">
+    <div class="row g-3">
+<div class="col-12 col-md-6 mt-4">
+    <iframe  style="max-width:550px;width:100%;height:312px;border-radius:10px;" src="https://www.youtube.com/embed/rOGZLPAYOlM?si=vG3S3hlQzkR1g3YC" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <h5 style="color:#eaeaea;font-weight:bold;margin-top:8px;">Shadow's Masterclass: Epic 1v4 Clutch Against Soul</h5>
+</div>
+<div class="col-12 col-md-6 mt-4">
+    <iframe style="max-width:550px;width:100%;height:312px;border-radius:10px;" src="https://www.youtube.com/embed/I0PPPnqSrUg?si=Kv6DDswmi6VeT61Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <h5 style="color:#eaeaea;font-weight:bold;margin-top:8px;">GodlLike vs Soul:Showdown BGMI ESL LAN 2025 Day 2</h5>
+</div>
+<div class="col-112 col-md-6  mt-4">
+    <iframe style="max-width:550px;width:100%;height:312px;border-radius:10px;"  src="https://www.youtube.com/embed/sonnlWyY9hM?si=c9KXPPVrQcaSjw64" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <h5 style="color:#eaeaea;font-weight:bold;margin-top:8px;">GODLIKE GOES SUPER SAIYAN MODE IN BGIS ROUNDS</h5>
+</div>
+<div class="col-12 col-md-6 mt-4">
+    <iframe style="max-width:550px;width:100%;height:312px;border-radius:10px;" src="https://www.youtube.com/embed/U9h-38A8A1Y?si=JCYfFfjkvBksIQzr" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <h5 style="color:#eaeaea;font-weight:bold;margin-top:8px;">Clips That Made Jonathan Famous😱🔥</h5>
+</div>
+</div>
+</div>
+
+<div class="container">
+<div>
+    <h2 style="color: #eaeaea;text-align:center;margin-top:48px;font-weight:bold;margin-bottom:32px;">Voices of Victory: Legends Speak</h2>
+</div>
+</div>
+
+<div class="container">
+<div class="row g-3">
+<div class="col-12 col-md-4">
+<div class="review-container h-100">
+<div style="display:flex;justify-content:space-between;align-items:center;margin:10px;" class="text-star">
+<div class="name-img d-flex align-items-center">
+<div class="review-img">
+    <img style="width:40px;height:40px;border-radius:50%;" src="https://t4.ftcdn.net/jpg/02/14/74/61/360_F_214746128_31JkeaP6rU0NzzzdFC4khGkmqc8noe6h.jpg" alt="">
+</div>
+<div class="name ms-2">
+     <span style="color:#d4d4d4;font-weight:bold;">Karan Maulekhi</span>
+</div>
+</div>
+<div class="star">
+    <i style="color:yellow;" class="fa-solid fa-star"></i> <i style="color:yellow;" class="fa-solid fa-star"></i> <i style="color:yellow;" class="fa-solid fa-star"></i> <i style="color:yellow;" class="fa-solid fa-star"></i> <i style="color:rgb(176, 176, 163);" class="fa-solid fa-star"></i>
+</div>
+</div>
+<p style="color:#d4d4d4;margin-top:16px;">As a BGMI player, I can confidently say that the gameplay is absolutely thrilling.
+     The realistic graphics, detailed maps, and smooth mechanics make every match 
+     feel intense and immersive. </p>
+</div>
+</div>
+<div class="col-12 col-md-4">
+<div class="review-container h-100">
+    <div style="display:flex;justify-content:space-between;align-items:center;margin-top:10px;" class="text-star">
+    <div class="name-img d-flex align-items-center">
+    <div class="review-img">
+        <img style="width:40px;height:40px;border-radius:50%;" src="https://img.freepik.com/free-photo/young-bearded-man-with-striped-shirt_273609-5677.jpg" alt="">
+    </div>
+    <div class="name ms-2">
+         <span style="color:#d4d4d4;font-weight:bold;">Lalit Rawat</span>
+    </div>
+    </div>
+    <div class="star">
+        <i style="color:yellow;" class="fa-solid fa-star"></i> <i style="color:yellow;" class="fa-solid fa-star"></i> <i style="color:yellow;" class="fa-solid fa-star"></i> <i style="color:yellow;" class="fa-solid fa-star"></i> <i style="color:rgb(176, 176, 163);" class="fa-solid fa-star"></i>
+    </div>
+    </div>
+    <p style="color:#d4d4d4;margin-top:16px;">What I love most about BGMI is how well it runs on my phone. The game is super optimized,
+         offering smooth performance even during intense fights. I’ve played on both mid-range and high-end devices, and the.... </p>
+    </div>
+</div>
+<div class="col-12 col-md-4">
+<div class="review-container h-100">
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-top:10px;" class="text-star">
+        <div class="name-img d-flex align-items-center">
+        <div class="review-img">
+            <img style="width:40px;height:40px;border-radius:50%;" src="https://img.freepik.com/free-photo/smiley-man-relaxing-outdoors_23-2148739334.jpg?semt=ais_hybrid" alt="">
+        </div>
+        <div class="name ms-2">
+             <span style="color:#d4d4d4;font-weight:bold;">Sourabh Negi</span>
+        </div>
+        </div>
+        <div class="star">
+            <i style="color:yellow;" class="fa-solid fa-star"></i> <i style="color:yellow;" class="fa-solid fa-star"></i> <i style="color:yellow;" class="fa-solid fa-star"></i> <i style="color:yellow;" class="fa-solid fa-star"></i> <i style="color:rgb(176, 176, 163);" class="fa-solid fa-star"></i>
+        </div>
+        </div>
+        <p style="color:#d4d4d4;margin-top:16px;">Being part of the BGMI community feels amazing. The competitive scene is insane,
+             with tournaments like BGIS showcasing the best teams and players in action. Watching matches inspires me to improve
+              my skills. </p>
+        </div>
+    </div>
+</div>
+</div>
+</div>
+
+
+<div class="container">
+    <div style="display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid rgb(206, 194, 194);margin-bottom:40px;padding-bottom:40px;padding-top:80px;" class="logo-footer">
+    <div class="img">
+        <img src="https://esports.battlegroundsmobileindia.com/images/krafton-logo.svg" alt="">
+    </div>
+    <div class="footer-icons">
+        <i style="font-size:24px;color:#d4d4d4;" class="fa-brands fa-instagram"></i> <i style="font-size:24px;color:#d4d4d4;margin-inline:24px;" class="fa-brands fa-youtube"></i> <i style="font-size:24px;color:#d4d4d4;" class="fa-brands fa-x-twitter"></i>
+    </div>
+</div>
+<div class="footer-text" style="margin-bottom:30px;display:flex;" class="nav mx-0 px-0">
+     
+        <a style="color:#d4d4d4;font-weight:bold;" href="#">ABOUT BGMI</a>
+        <a style="color:#d4d4d4;font-weight:bold;" href="#">SUPPORT</a>
+        <a style="color:#d4d4d4;font-weight:bold;" href="#">TERMS OF SERVICE</a>
+        <a style="color:#d4d4d4;font-weight:bold;" href="#">PRIVACY POLICY</a>
+
+</div>
+<p style="color:#d4d4d4;font-size:12px;">Project designed by Karan Maulekhi. Student of arena animation at Patel Nager</p>
+</div>
+
+<style>
+    @media(max-width:769px)
+    {
+        .jon-text{
+            flex-direction:column;
+        }
+        .jon-text-2{
+            flex-direction:column-reverse;
+        }
+        .jony-img{
+            text-align:center;
+        }
+        .footer-text{
+            flex-direction:column;
+        }
+        }
+        @media(max-width:765px){
+            .om-img{
+                display: none;
+            }
+            .bgmi-img{
+                display:none;
+            }
+            .heading-2{
+                margin-bottom: 16px;
+                margin-top:12px;
+            }
+        }
+    @media(max-width:426px){
+        .jony-flex{
+            flex-direction:column;
+        }
+        .raise-flex{
+            flex-direction:column;
+        }
+        .jonny-card{
+            flex-direction:column;
+            gap:12px;
+        }
+        .review-container-out{
+            flex-direction:column;
+        }
+        .about-jony-container{
+            flex-direction:column;
+        }
+        .om-img{
+            display:none;
+        }
+        .trophy{
+            width:100%;
+        }
+        .bgmi-img{
+            display:none;
+        }
+        .top-text{
+            font-size:14px;
+        }
+        .sub-paragraph{
+            text-align:left;
+        }
+        .reverse-2nd{
+            flex-direction: column-reverse;
+        }
+        .review-head{
+            font-size:32px !important;
+        }
+        .review-pa{
+            font-size:16px !important;
+        }
+    }
+    @media(max-width:321px){
+        .m-0{
+      margin-left:0;
+        }
+    }
+    @media(max-width:321px){
+        .om-img{
+            display:none;
+        }
+    }
+    @media(max-width:350px){
+.head-container {
+    display: none;
+}
+    }
+</style>
+
+</body>
+</html>
